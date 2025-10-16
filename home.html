@@ -130,35 +130,34 @@
 </div>
 </section>
 
-    <section id="contact" style="margin-top:24px;display:grid;grid-template-columns:1fr 320px;gap:18px;align-items:start">
-    <form id="quoteForm" class="hero-card">
-  <h3 style="margin-top:0">Request a Quote</h3>
+   <section id="contact" class="contact-section">
+  <form id="quoteForm" class="contact-card">
+    <h3>Request a Quote</h3>
 
-   <label style="display:block;margin-top:12px;font-size:13px">Name</label>
-   <input name="name" style="width:100%;padding:10px;border-radius:8px;border:1px solid #e6eef0;margin-top:6px" /> 
-   
-   <label style="display:block;margin-top:12px;font-size:13px">Phone or Email</label> 
-   <input name="contact" required style="width:100%;padding:10px;border-radius:8px;border:1px solid #e6eef0;margin-top:6px" /> 
-   
-   <label style="display:block;margin-top:12px;font-size:13px">Message</label> 
-   <textarea name="message" required style="width:100%;padding:10px;border-radius:8px;border:1px solid #e6eef0;margin-top:6px" rows="4"></textarea>
-    
-   <div style="margin-top:12px">
-    <button class="btn btn-primary" type="submit">Send Request</button></div>
-</form>
+    <label for="name">Name</label>
+    <input id="name" name="name" required />
 
-      <div class="hero-card">
-        <h4 style="margin-top:0">Contact</h4>
-        <div class="meta">
-          <div><strong>Phone:</strong> <a href="tel:+17034994210">(703) 499‑4210</a></div>
-          <div><strong>Location:</strong> Dardanelle, Arkansas</div>
-          <div><strong>Hours:</strong> Mon–Sat, 8am–6pm</div>
-          <div><strong>Email:</strong> (not listed)</div>
-        </div>
+    <label for="contactInfo">Phone or Email</label>
+    <input id="contactInfo" name="contact" required />
 
-        <div style="margin-top:12px;color:var(--muted);font-size:13px">Want social links or a business email added? Tell me what handle or email to show and I"ll update the site.</div>
-      </div>
-    </section>
+    <label for="message">Message</label>
+    <textarea id="message" name="message" rows="4" required></textarea>
+
+    <button type="submit">Send Request</button>
+  </form>
+
+  <div class="contact-card">
+    <h4>Contact</h4>
+    <div class="meta">
+      <div><strong>Phone:</strong> <a href="tel:+17034994210">(703) 499-4210</a></div>
+      <div><strong>Phone:</strong> <a href="tel:+15712140337">(571) 214-0337</a></div>
+      <div><strong>Location:</strong> Dardanelle, Arkansas</div>
+      <div><strong>Hours:</strong> Mon–Sat, 8am–6pm</div>
+      <div><strong>Email:</strong> (not listed)</div>
+    </div>
+  </div>
+</section>
+
 
     <footer>
       <div style="max-width:1100px;margin:0 auto;padding:0 20px;display:flex;justify-content:space-between;align-items:center;gap:8px">

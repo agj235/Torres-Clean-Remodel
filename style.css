@@ -67,3 +67,70 @@ input, textarea {
   border-radius: 8px;
   border: 1px solid #e6eef0;
 }
+/* CONTACT SECTION */
+.contact-section {
+  display: grid;
+  grid-template-columns: 1fr minmax(340px, 480px);
+  gap: 24px;
+  align-items: start;
+  margin-top: 36px;
+}
+
+.contact-card {
+  background: var(--card);
+  padding: 28px;
+  border-radius: 14px;
+  box-shadow: 0 6px 20px rgba(2, 6, 23, 0.06);
+  width: 100%;
+}
+
+.contact-card h3,
+.contact-card h4 {
+  margin-top: 0;
+}
+
+.contact-card label {
+  display: block;
+  margin-top: 16px;
+  font-size: 14px;
+  color: var(--muted);
+}
+
+.contact-card input,
+.contact-card textarea {
+  width: 100%;
+  padding: 12px;
+  margin-top: 6px;
+  border-radius: 8px;
+  border: 1px solid #e6eef0;
+  font-size: 16px;
+}
+
+.contact-card button {
+  background-color: var(--accent);
+  color: #fff;
+  padding: 12px 20px;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  font-size: 16px;
+  width: 100%;
+  margin-top: 20px;
+}
+
+.meta {
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+}
+
+/* RESPONSIVE LAYOUT */
+@media (max-width: 880px) {
+  .contact-section {
+    grid-template-columns: 1fr;
+  }
+  .contact-card {
+    max-width: 480px;
+    margin: 0 auto;
+  }
+}
